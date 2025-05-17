@@ -2,6 +2,8 @@ import 'dart:developer';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+//this is class observer for tracking the states of cubit
+
 class MyObserver implements BlocObserver {
   @override
   void onChange(BlocBase bloc, Change change) {

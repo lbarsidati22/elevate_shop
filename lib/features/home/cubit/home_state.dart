@@ -1,5 +1,6 @@
 part of 'home_cubit.dart';
 
+// the states of the app
 sealed class HomeState {}
 
 final class HomeInitial extends HomeState {}

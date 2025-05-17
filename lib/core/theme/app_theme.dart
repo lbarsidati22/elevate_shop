@@ -1,6 +1,7 @@
 import 'package:elevate_shop/core/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 
+//app theme here
 class AppTheme {
   static ThemeData get mainTheme => ThemeData(
         // scaffoldBackgroundColor: AppColors.white,

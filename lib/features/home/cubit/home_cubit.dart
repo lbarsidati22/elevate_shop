@@ -9,6 +9,9 @@ class HomeCubit extends Cubit<HomeState> {
   HomeCubit() : super(HomeInitial());
   final apiServices = ApiServices();
   List<ProductModel> products = [];
+
+  // This function is for fetching data from API.
+
   Future<void> getProducts() async {
     emit(GetProductsLeading());
     try {
