@@ -1,6 +1,8 @@
 # Elevate Shop
 ## 📷 **شاشة التطبيق**
 
+![Home Screen](assets/images/app_photo1.jpg)
+
 هذا المشروع يستخدم Bloc/Cubit لإدارة حالة التطبيق وفصل المنطق عن الواجهة الأمامية، مما يعزز التنظيم والكفاءة. كما يعتمد على Dio لجلب البيانات، CachedNetworkImage للحفاظ على الصور، وShimmer لتحسين تجربة المستخدم أثناء تحميل المحتوى. كذلك، تم اعتماد الخط OpenSans لجعل تصميم التطبيق أكثر جاذبية، مع هيكلة مناسبة للمجلدات لزيادة سهولة الصيانة.
 
 This project utilizes Bloc/Cubit for state management, separating business logic from UI to enhance structure and efficiency. It relies on Dio for data fetching, CachedNetworkImage for image caching, and Shimmer to improve user experience while loading content. Additionally, the OpenSans font was integrated for a more visually appealing design, with proper folder structuring to improve maintainability.
@@ -26,8 +28,6 @@ dependencies:
   cached_network_image: ^3.4.1
   
   shimmer: ^3.0.0
-
-![Home Screen](assets/images/app_photo1.jpg)
 
 ![Home Screen](assets/images/app_photo2.jpg)
 <!-- screenshots\photo_2025-04-21_05-12-16.jpg
