@@ -1,27 +1,29 @@
 import 'package:elevate_shop/features/home/model/product_model.dart';
-import 'package:elevate_shop/features/home/views/widgets/products_widget_item.dart';
+import 'package:elevate_shop/features/home/views/widgets/products_card_widget.dart';
 import 'package:flutter/material.dart';
 
-class RecommendedItemWidget extends StatelessWidget {
+class ProductItem extends StatelessWidget {
+  const ProductItem({
+    super.key,
+    required this.products,
+  });
+
   final List<ProductModel> products;
-  const RecommendedItemWidget({super.key, required this.products});
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
-      separatorBuilder: (context, index) {
-        return SizedBox(
-          height: 10,
-        );
-      },
+    return GridView.builder(
+      padding: const EdgeInsets.all(8.0),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        childAspectRatio: 0.77,
+        crossAxisSpacing: 8.0,
+        mainAxisSpacing: 11,
+      ),
       itemCount: products.length,
       itemBuilder: (context, index) {
         final product = products[index];
-        return ArticleWidgetItem(
-          products: product,
-        );
+        return ProductCard(product: product);
       },
     );
   }

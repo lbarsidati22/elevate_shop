@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:elevate_shop/features/home/model/product_model.dart';
 import 'package:elevate_shop/features/home/services/api_services.dart';
 import 'package:flutter/material.dart';
