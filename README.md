@@ -8,6 +8,7 @@ All necessary libraries should be included in the project to ensure proper funct
 
 
 فيما يلي قائمة بجميع المكتبات المستخدمة في هذا المشروع، والتي يجب التأكد من تضمينها في ملف pubspec.yaml:
+,
 dependencies:
   flutter:
     sdk: flutter
@@ -15,10 +16,15 @@ dependencies:
   <!-- # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons. -->
   cupertino_icons: ^1.0.8
+
   dio: ^5.8.0+1
+
   bloc: ^9.0.0
+
   flutter_bloc: ^9.1.1
+
   cached_network_image: ^3.4.1
+  
   shimmer: ^3.0.0
 
 ![Home Screen](assets/images/app_photo1.jpg)
