@@ -1,4 +1,5 @@
 import 'package:elevate_shop/core/theme/app_theme.dart';
+import 'package:elevate_shop/core/functions/app_constants.dart';
 import 'package:elevate_shop/features/home/cubit/home_cubit.dart';
 import 'package:elevate_shop/features/home/views/pages/home_page.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class ElevateShop extends StatelessWidget {
       create: (context) => HomeCubit()..getProducts(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Elevate Shop',
+        title: AppConstants.appName,
         theme: AppTheme.mainTheme,
         home: HomePage(),
       ),
